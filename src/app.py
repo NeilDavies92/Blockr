@@ -17,5 +17,12 @@ while True:
                 else:
                     file.write(direct_to + ' ' + b + '\n')
     else:
-        print('Browse away..')
+        with open(hosts_temp,'r+') as file:
+            content = file.readlines()
+            file.seek(0) # Move curser to top of file
+            for line in content:
+                if not any(b in line for b in blocked):
+                    file.write(line)
+            file.truncate() # Remove anything below new write
+            print('Browse away..')
     time.sleep(5) # script executes every 5 seconds for testing / change to 300 on completion
