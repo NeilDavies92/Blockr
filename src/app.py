@@ -6,7 +6,7 @@ direct_to = '127.0.0.1'
 blocked = ['www.linkedin.com', 'linkedin.com']
 
 while True:
-    if dt(dt.now().year, dt.now().month, dt.now().day, 7) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 12):
+    if dt(dt.now().year, dt.now().month, dt.now().day, 7) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 15):
         print('Working...')
         with open(hosts, 'r+') as file:
             content = file.read()
