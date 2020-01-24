@@ -1,9 +1,10 @@
 import time
 from datetime import datetime as dt
 
-hosts = r'C:\Windows\System32\drivers\etc\hosts' # r infront of string - passing row string to avoid break lines
+hosts = 'C:\Windows\System32\drivers\etc\hosts' # r infront of string - passing row string to avoid break lines
+# mac_linux_hosts = '/etc/hosts'
 direct_to = '127.0.0.1'
-blocked = ['www.linkedin.com', 'linkedin.com']
+blocked = ['www.facebook.com', 'facebook.com']
 
 while True:
     if dt(dt.now().year, dt.now().month, dt.now().day, 7) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 15):
@@ -26,3 +27,5 @@ while True:
             print('Browse away..')
 
     time.sleep(5) # script executes every 5 seconds for testing / change to 300 on completion
+
+# Schedule as a windows task
