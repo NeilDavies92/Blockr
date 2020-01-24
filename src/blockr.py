@@ -27,5 +27,3 @@ while True:
             print('Browse away..')
 
     time.sleep(5) # script executes every 5 seconds for testing / change to 300 on completion
-
-# Schedule as a windows task
