@@ -26,4 +26,4 @@ while True:
             file.truncate() # Remove anything below new write
             print('Browse away..')
 
-    time.sleep(5) # script executes every 5 seconds for testing / change to 300 on completion
+    time.sleep(300) # script executes every 5 minutes
